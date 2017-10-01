@@ -1,0 +1,276 @@
+/* Formatting for Elements*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #777777;
+  background-image: url('../images/concrete_wall_3.png');
+}
+
+h1 h2 h3 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+  color: #4aaaa5;
+  font-weight: 700;
+
+}
+
+/* The styling for the top-of-page nav bar */
+
+nav {
+  float: right;
+  margin-top: 25px;
+}
+
+nav a {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1em;
+  color: #a6a6a6;
+  text-decoration: none;
+  border: none;
+
+
+}
+
+nav a:nth-child(2) {
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6; /*this will put the border on either side of the middle item in the 3 item nav bar*/
+}
+
+footer {
+  clear: both;
+  background-color: #666666; /*Revelation 13:18*/
+  padding: 25px;
+  border-top: 8px solid #4aaaa5;
+  color: #a6a6a6;
+  text-align: center;
+  font-size: 0.5em;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* Input form elements */
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+/* From the w3schools website*/
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+label {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 0px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+textarea {
+  height: 200px;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/* CONTAINERS used on all pages */
+/* Your basic container, which we'll use over and over*/
+
+.container {
+	max-width: 960px; /*max width will be 960px; if viewport is <960px, the container will shrink */
+	width: 100%;
+	margin: 0 auto;   /*keep elements inside horizontally centered*/
+	clear: both;
+}
+
+
+/* Main Content Containers and other styles */
+.main-content-container {
+  float: left;
+  width: 100%;
+  max-width: 650px;
+  padding: 20px 30px 30px 30px;
+  margin: 0 0 40px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+.main-content-container p {
+  margin-bottom: 20px;
+}
+
+.main-content-container h2 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 90px;
+  color: #4aaaa5;
+  border-bottom: 3px solid #e6e6e6;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+/* Sidebar container and related styles*/
+
+.sidebar {
+  float: right;
+  width: 100%;
+  max-width: 270px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+
+.sidebar h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eeeeee;
+  font-weight: bold;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.25em;
+  color: #4aaaa5;
+}
+
+.sidebar a{
+  text-decoration: none;
+}
+
+.social-image {
+  width: 60px;
+  height: 60px;
+  margin-top: 8px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  border: 0 none;
+}
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/* Portfolio Page Classes */
+.portfolio-item {
+  position: relative;
+  float: left;
+  width: 275px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.portfolio-item:nth-child(odd) {
+  /* "nth" child of the enclosing container. The Banner (e.g. "<h2>Portfolio</h2>") is child #1, so the first
+      .portfolio-item on the page is child #2. This nth-child(odd) will mean that the 2nd .portfolio-item (which is the
+      3rd child of the container) will get the left margin, and so on. */ 
+  margin-left: 35px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.portfolio-item h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #ffffff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/* Formatting of IDs */
+
+/* IDs for specific units of formatting */
+#header-section {
+  position: fixed;
+  width: 100%;
+  overflow: auto;
+  color: #ffffff;
+  background: #ffffff;
+  border-bottom: 2px solid #cccccc;
+}
+
+#logo {
+  float: left;
+  width: 250px;
+  height: 90px;
+  
+  border-right: none;   
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+  margin-left: 0px;
+}
+
+#logo h2 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 90px;
+  color: #ffffff;
+}
+
+#spacer-container {
+  padding-top: 130px;
+}
+
+#hulme-picture {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+/* Contact Page IDs */
+
+
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/*---------------------------------------------------------------------*/
+
+
+/* From the w3schools website*/
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
