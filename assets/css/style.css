@@ -1,4 +1,4 @@
-/* Formatting for Elements*/
+/* Formatting for Elements; Includes the @media screen tags*/
 
 * {
   box-sizing: border-box;
@@ -164,6 +164,7 @@ textarea {
 .social-image {
   width: 60px;
   height: 60px;
+  max-width: 100%;
   margin-top: 8px;
   margin-right: 0px;
   margin-bottom: 0px;
@@ -248,6 +249,7 @@ textarea {
 #hulme-picture {
   float: left;
   width: 200px;
+  max-width: 100%;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
@@ -273,4 +275,33 @@ textarea {
 input[type=submit]:hover {
     background-color: #45a049;
 }
+/*---------------------------------------------------------------------*/
+/* Here are the @media screen tags for the Responsive homework*/
 
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+  float: left;
+  width: 100%;
+  max-width: 270px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+.container {
+  max-width: 720px; 
+  width: 100%;
+  margin: 0 auto;   /*keep elements inside horizontally centered*/
+  clear: both;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+  
+}
