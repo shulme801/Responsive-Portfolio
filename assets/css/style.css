@@ -275,19 +275,61 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 /*---------------------------------------------------------------------*/
-/* Media Queries*/
-
+/* Media Queries for Responsiveness*/
 /*---------------------------------------------------------------------*/
 
+@media screen and (max-width: 980px) {
+      nav {
+        margin-right: 15px;
+      }
 
-@media screen and (max-width: 768px) {
-      .sidebar {
-        float: left;
-        max-width: 95%;
+      #logo {
+        margin-left: 50px;
+      }
+
+      .main-content-container {
+      max-width: 50%;
+      float: left;
+      margin-left: 50px;
+      margin-right: auto;
+      margin-top: 0px;
+      margin-bottom: 30px;
+    }
+
+    .sidebar {
+        float: right;
+        max-width: 33%;
         margin-left: 15px;
-        margin-right: auto;
+        margin-right: 30px;
         margin-top: 0px;
         margin-bottom: 30px;
+      }
+
+
+  .portfolio-item {
+        position: relative;
+        float: left;
+        width: 100%;
+        margin: 20px 0 25px;
+        overflow: auto;
+    }
+    .portfolio-item:nth-child(odd) {
+  /* "nth" child of the enclosing container. The Banner (e.g. "<h2>Portfolio</h2>") is child #1, so the first
+      .portfolio-item on the page is child #2. This nth-child(odd) will mean that the 2nd .portfolio-item (which is the
+      3rd child of the container) will get the left margin, and so on. */ 
+      margin-left: 0px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+      nav {
+        margin-right: 15px;
+      }
+      #logo {
+        margin-left: 15px;
       }
 
     .container {
@@ -304,20 +346,27 @@ input[type=submit]:hover {
       margin-bottom: 30px;
     }
 
-    #logo {
-      margin-left: 15px;
-    }
-
-    nav {
-      margin-right: 15px;
-    }
+    .sidebar {
+        float: left;
+        max-width: 95%;
+        margin-left: 15px;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 30px;
+      }
 
     .portfolio-item {
         position: relative;
         float: left;
-      
         margin: 20px 0 25px;
         overflow: auto;
+        max-width: 45%;
+    }
+    .portfolio-item:nth-child(odd) {
+  /* "nth" child of the enclosing container. The Banner (e.g. "<h2>Portfolio</h2>") is child #1, so the first
+      .portfolio-item on the page is child #2. This nth-child(odd) will mean that the 2nd .portfolio-item (which is the
+      3rd child of the container) will get the left margin, and so on. */ 
+  margin-left: 35px;
     }
     
 }
@@ -337,12 +386,14 @@ input[type=submit]:hover {
   nav {
   clear: both;
   margin-top: 25px;
+  max-width: 100%;
   }
+  
 
   .portfolio-item {
         position: relative;
         float: left;
-        width: 100%
+        width: 100%;
         margin: 20px 0 25px;
         overflow: auto;
     }
