@@ -366,7 +366,7 @@ input[type=submit]:hover {
   /* "nth" child of the enclosing container. The Banner (e.g. "<h2>Portfolio</h2>") is child #1, so the first
       .portfolio-item on the page is child #2. This nth-child(odd) will mean that the 2nd .portfolio-item (which is the
       3rd child of the container) will get the left margin, and so on. */ 
-  margin-left: 35px;
+        margin-left: 35px;
     }
     
 }
@@ -388,17 +388,22 @@ input[type=submit]:hover {
   margin-top: 25px;
   max-width: 100%;
   }
-  
+
 
   .portfolio-item {
         position: relative;
         float: left;
-        width: 100%;
+        max-width: 100%;
         margin: 20px 0 25px;
         overflow: auto;
-    }
+  }
   
-
+  .portfolio-item:nth-child(odd) {
+  /* "nth" child of the enclosing container. The Banner (e.g. "<h2>Portfolio</h2>") is child #1, so the first
+      .portfolio-item on the page is child #2. This nth-child(odd) will mean that the 2nd .portfolio-item (which is the
+      3rd child of the container) will get the left margin, and so on. */ 
+      margin-left: 0px;
+    }
   
 }
 
