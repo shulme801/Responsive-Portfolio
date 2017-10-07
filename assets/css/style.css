@@ -224,9 +224,9 @@ textarea {
 
 #logo {
   float: left;
-  width: 250px;
+  max-width: 250px;
   height: 90px;
-  
+  width: 100%;
   border-right: none;   
   text-align: center;
   text-decoration: none;
@@ -276,6 +276,7 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
+
 @media screen and (max-width: 768px) {
       .sidebar {
         float: left;
@@ -318,7 +319,32 @@ input[type=submit]:hover {
     
 }
 
+
 @media screen and (max-width: 640px) {
+  #header-section {
+    position: static;
+    max-width: 100%;
+    }
+
+  #logo {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  nav {
+  clear: both;
+  margin-top: 25px;
+  }
+
+  .portfolio-item {
+        position: relative;
+        float: left;
+        width: 100%
+        margin: 20px 0 25px;
+        overflow: auto;
+    }
+  
+
   
 }
 
